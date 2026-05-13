@@ -1,0 +1,677 @@
+<!doctype html>
+<html class="light" lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sản phẩm mới | ÉLÉGANCE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e2e2e2",
+              secondary: "#5d5f5f",
+              "secondary-fixed": "#e2e2e2",
+              "on-surface-variant": "#4c4546",
+              "on-secondary": "#ffffff",
+              "surface-tint": "#5e5e5e",
+              "primary-container": "#1b1b1b",
+              "on-primary-fixed": "#1b1b1b",
+              "tertiary-fixed-dim": "#e9c349",
+              "tertiary-fixed": "#ffe088",
+              "surface-variant": "#e2e2e2",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#c6c6c6",
+              "on-error": "#ffffff",
+              "tertiary-container": "#241a00",
+              "surface-bright": "#f9f9f9",
+              surface: "#f9f9f9",
+              "on-primary-fixed-variant": "#474747",
+              "surface-container-high": "#e8e8e8",
+              "secondary-container": "#dfe0e0",
+              "on-secondary-fixed": "#1a1c1c",
+              "surface-container": "#eeeeee",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              primary: "#000000",
+              "secondary-fixed-dim": "#c6c6c7",
+              "primary-fixed": "#e2e2e2",
+              "on-primary-container": "#848484",
+              "inverse-on-surface": "#f1f1f1",
+              "inverse-surface": "#303030",
+              "error-container": "#ffdad6",
+              "surface-container-lowest": "#ffffff",
+              background: "#f9f9f9",
+              tertiary: "#000000",
+              "on-tertiary-fixed-variant": "#574500",
+              "on-tertiary-container": "#a08000",
+              "primary-fixed-dim": "#c6c6c6",
+              "on-secondary-container": "#616363",
+              "surface-container-low": "#f3f3f3",
+              "outline-variant": "#cfc4c5",
+              outline: "#7e7576",
+              "on-secondary-fixed-variant": "#454747",
+              "on-tertiary-fixed": "#241a00",
+              "on-background": "#1b1b1b",
+              "surface-dim": "#dadada",
+              "on-surface": "#1b1b1b",
+              error: "#ba1a1a",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "section-gap": "120px",
+              "margin-desktop": "64px",
+              gutter: "24px",
+              "margin-mobile": "20px",
+              unit: "8px",
+              "container-max-width": "1440px",
+            },
+            fontFamily: {
+              "headline-md": ["Playfair Display"],
+              "display-lg-mobile": ["Playfair Display"],
+              "body-md": ["Manrope"],
+              "headline-sm": ["Playfair Display"],
+              "display-lg": ["Playfair Display"],
+              "body-lg": ["Manrope"],
+              "label-uppercase": ["Manrope"],
+            },
+            fontSize: {
+              "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "400" }],
+              "display-lg-mobile": [
+                "40px",
+                { lineHeight: "1.2", fontWeight: "400" },
+              ],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              "headline-sm": ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+              "display-lg": [
+                "64px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "label-uppercase": [
+                "12px",
+                {
+                  lineHeight: "1.0",
+                  letterSpacing: "0.1em",
+                  fontWeight: "600",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 300,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+      body {
+        background-color: #f9f9f9;
+        color: #1b1b1b;
+      }
+      .editorial-image-hover {
+        transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .product-card:hover .editorial-image-hover {
+        transform: scale(1.05);
+      }
+      .sticky-nav-active {
+        background-color: rgba(249, 249, 249, 0.8);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body class="font-body-md text-body-md overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header
+      class="fixed top-0 z-50 w-full bg-surface/80 dark:bg-on-surface/80 backdrop-blur-xl border-b border-outline-variant/20"
+    >
+      <nav
+        class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-container-max-width mx-auto"
+      >
+        <div class="hidden md:flex gap-8 items-center">
+          <a
+            class="font-label-uppercase text-label-uppercase text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-on-primary transition-colors duration-500 ease-in-out"
+            href="#"
+            >Collections</a
+          >
+          <a
+            class="font-label-uppercase text-label-uppercase text-primary dark:text-on-primary border-b border-primary dark:border-on-primary pb-1 transition-colors duration-500 ease-in-out"
+            href="#"
+            >New Arrivals</a
+          >
+          <a
+            class="font-label-uppercase text-label-uppercase text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-on-primary transition-colors duration-500 ease-in-out"
+            href="#"
+            >About Us</a
+          >
+          <a
+            class="font-label-uppercase text-label-uppercase text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-on-primary transition-colors duration-500 ease-in-out"
+            href="#"
+            >Contact</a
+          >
+        </div>
+        <div class="md:hidden">
+          <span class="material-symbols-outlined text-primary">menu</span>
+        </div>
+        <a
+          class="font-display-lg text-headline-sm md:text-headline-md tracking-[0.2em] text-primary dark:text-on-primary uppercase"
+          href="/"
+          >ÉLÉGANCE</a
+        >
+        <div class="flex gap-6 items-center">
+          <button class="hover:opacity-70 transition-opacity">
+            <span class="material-symbols-outlined" data-icon="search"
+              >search</span
+            >
+          </button>
+          <button class="hover:opacity-70 transition-opacity">
+            <span class="material-symbols-outlined" data-icon="shopping_bag"
+              >shopping_bag</span
+            >
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section
+        class="relative h-[716px] flex flex-col items-center justify-center text-center px-margin-mobile md:px-margin-desktop"
+      >
+        <div class="max-w-3xl space-y-6">
+          <span
+            class="font-label-uppercase text-label-uppercase tracking-[0.3em] text-outline"
+            >BST THU ĐÔNG 2024</span
+          >
+          <h1
+            class="font-display-lg text-display-lg-mobile md:text-display-lg italic"
+          >
+            Sản phẩm mới
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed italic max-w-2xl mx-auto"
+          >
+            Một bản giao hưởng của lụa satin và những đường cắt tinh xảo, nơi vẻ
+            đẹp vượt thời gian gặp gỡ sự phóng khoáng hiện đại. ÉLÉGANCE mời bạn
+            bước vào thế giới của những giấc mơ dệt bằng sợi vàng.
+          </p>
+        </div>
+        <div
+          class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
+        >
+          <span class="material-symbols-outlined text-outline"
+            >arrow_downward</span
+          >
+        </div>
+      </section>
+      <!-- Filters & Sorting -->
+      <section
+        class="border-y border-outline-variant/30 py-8 px-margin-mobile md:px-margin-desktop bg-surface sticky top-20 z-40"
+      >
+        <div
+          class="max-w-container-max-width mx-auto flex flex-col md:row justify-between items-center gap-6"
+        >
+          <div
+            class="flex gap-10 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto no-scrollbar"
+          >
+            <button
+              class="font-label-uppercase text-label-uppercase text-primary whitespace-nowrap"
+            >
+              Tất cả sản phẩm
+            </button>
+            <button
+              class="font-label-uppercase text-label-uppercase text-outline hover:text-primary transition-colors whitespace-nowrap"
+            >
+              Áo Khoác
+            </button>
+            <button
+              class="font-label-uppercase text-label-uppercase text-outline hover:text-primary transition-colors whitespace-nowrap"
+            >
+              Váy Đầm
+            </button>
+            <button
+              class="font-label-uppercase text-label-uppercase text-outline hover:text-primary transition-colors whitespace-nowrap"
+            >
+              Phụ Kiện
+            </button>
+            <button
+              class="font-label-uppercase text-label-uppercase text-outline hover:text-primary transition-colors whitespace-nowrap"
+            >
+              Giày Dép
+            </button>
+          </div>
+          <div
+            class="flex items-center gap-8 w-full md:w-auto justify-between md:justify-end"
+          >
+            <div class="flex items-center gap-2 cursor-pointer group">
+              <span
+                class="font-label-uppercase text-label-uppercase text-outline group-hover:text-primary transition-colors"
+                >Sắp xếp theo</span
+              >
+              <span
+                class="material-symbols-outlined text-[18px] text-outline group-hover:text-primary transition-colors"
+                >expand_more</span
+              >
+            </div>
+            <div class="flex items-center gap-2 cursor-pointer group">
+              <span
+                class="font-label-uppercase text-label-uppercase text-outline group-hover:text-primary transition-colors"
+                >Bộ lọc</span
+              >
+              <span
+                class="material-symbols-outlined text-[18px] text-outline group-hover:text-primary transition-colors"
+                >tune</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Product Grid -->
+      <section
+        class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max-width mx-auto"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-gutter gap-y-16"
+        >
+          <!-- Product 1 -->
+          <div class="product-card group cursor-pointer">
+            <div class="overflow-hidden aspect-[3/4] mb-6 bg-surface-container">
+              <img
+                alt="Váy Lụa Satin"
+                class="w-full h-full object-cover editorial-image-hover"
+                data-alt="A high-end editorial fashion shot featuring a model wearing a luxurious black silk satin dress. The setting is a minimalist architectural space with soft, natural side lighting that accentuates the fabric's sheen. The overall aesthetic is clean, monochrome, and sophisticated, aligning with a premium luxury brand's visual identity."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRzdsWTL8JYb0gkJnu4P7h9FgdFo8Wtd0Mnh37SWVGx0JLEGbNEqxDJeyIexTlnenDGFp8YWW9pGpW1UsA4_rVtVNV_-xgx4UnQMzHAlzMWoaonJdZv7Aq_ACa6euj690fe755zQVSiJxXpdEFd4iDXvvOysQPDGx67ffjn8FI-zke3YozG0DanCP74xhR4n-1D6hxmmqqhCEQsNGfhMv1EEjyois7oNzkyOAidcsd1gZ-JCV3QPIzPPYhqI-iOiLy8jVOnlw8yRNt"
+              />
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between items-start">
+                <h3
+                  class="font-body-md text-body-md font-bold uppercase tracking-wider"
+                >
+                  Váy Lụa Satin
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="favorite"
+                  >favorite</span
+                >
+              </div>
+              <p class="font-label-uppercase text-label-uppercase text-outline">
+                100% Silk
+              </p>
+              <p class="font-body-md text-body-md pt-2">8.500.000 VND</p>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="product-card group cursor-pointer">
+            <div class="overflow-hidden aspect-[3/4] mb-6 bg-surface-container">
+              <img
+                alt="Áo Khoác Dạ Muse"
+                class="w-full h-full object-cover editorial-image-hover"
+                data-alt="Close-up detail of a premium tailored wool coat in a soft charcoal grey. The image showcases the exquisite texture of the high-quality wool and precision stitching. The background is a neutral, out-of-focus studio setting, emphasizing the garment's structural elegance and artisanal quality in a bright, modern lighting style."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWK2G2xU3_BlP51MPKOHwAtJhE_97l5idSw-x-NwJIzljuQEjIHyU4wX-ebRoYFr-8wBQssXOZ-D-2mh9z64zxRh1FCTrS0Uz-KKwr2NdDltVPL-JL0ASjTvIHGjkzR8qZZUc6Sd3KFNYArYZP5W40l2rESHqR3kwr4onNJ4LPgeBoEF1NEp3_l4ZhQKqQ6324RzqZQD5ni0ersYn9JqpEZNsYQxv-7gXRbs4VCOVosd6gg60ZJHWgIga1jVDwZT9_QxraS__kVL6A"
+              />
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between items-start">
+                <h3
+                  class="font-body-md text-body-md font-bold uppercase tracking-wider"
+                >
+                  Áo Khoác Dạ Muse
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="favorite"
+                  >favorite</span
+                >
+              </div>
+              <p class="font-label-uppercase text-label-uppercase text-outline">
+                Premium Wool
+              </p>
+              <p class="font-body-md text-body-md pt-2">12.200.000 VND</p>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="product-card group cursor-pointer">
+            <div class="overflow-hidden aspect-[3/4] mb-6 bg-surface-container">
+              <img
+                alt="Sơ Mi Voan Aura"
+                class="w-full h-full object-cover editorial-image-hover"
+                data-alt="A fashion-forward image of a cream-colored linen blouse styled against a stark white background. The blouse has dramatic sleeves and a refined silhouette. Soft shadows create depth, emphasizing the minimalist and high-contrast design aesthetic of the brand. The lighting is crisp and editorial, perfect for a luxury catalog."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUtnnxHf0viVEP-Fwx4oukUYj2xhl9Zeawcjk0iLa0TIZqF1w36rm03V2CdZMwuu_YCvVNawO9GlHoopynnCcDky2yTzTKbuTut5FLIn1Q-O13-8nrtSdNK_bmMd9dBJSsTnlcZV2ElOOZHx7qMtBRYOP16CiHerXB9iEG6e1ioo8DLU6kRYcjAxLwGSaaH4y1_FqsxHfvZJoj650cF3PeqfZ2FY4wJqI1Nby2xF2KOP3ILopnFFNoqKxlrCIq9y9aL_IKW_0Xs80Z"
+              />
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between items-start">
+                <h3
+                  class="font-body-md text-body-md font-bold uppercase tracking-wider"
+                >
+                  Sơ Mi Voan Aura
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="favorite"
+                  >favorite</span
+                >
+              </div>
+              <p class="font-label-uppercase text-label-uppercase text-outline">
+                Organza Silk
+              </p>
+              <p class="font-body-md text-body-md pt-2">4.900.000 VND</p>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="product-card group cursor-pointer lg:mt-24">
+            <div class="overflow-hidden aspect-[3/4] mb-6 bg-surface-container">
+              <img
+                alt="Đầm Trắng Zenith"
+                class="w-full h-full object-cover editorial-image-hover"
+                data-alt="A model posing in a minimalist sculptural white dress in a desert-like setting with soft golden hour lighting. The fabric drapes elegantly, creating artistic shadows. The scene is calm and expansive, reflecting the atmospheric whitespace and luxury editorial style of the brand's new collection launch."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdSennbSKFyb7MwvajW3ePvfXEAfcntU_f4YkfalSpMlcYjmcYUqmRWJH4slDNoNGBbsmDbXqnaJGAeNMBbBz7jiHcEefyH_KUUNooOxLAxHbbUToVuO8gIYkeM68K4eN0vO6_WQnppheurrDNE-O1oTyfVaDkWCadRE6TxTt8FYc4CV-T-Q7R-w0ysr8uAnx0SBF28zJRF3zXWDfrOuHgpSOo3vfmeCo5ptUVaYjnzfsSjGMsIzrYnfh0MmG0mQbpLPbEMxXa-mEQ"
+              />
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between items-start">
+                <h3
+                  class="font-body-md text-body-md font-bold uppercase tracking-wider"
+                >
+                  Đầm Trắng Zenith
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="favorite"
+                  >favorite</span
+                >
+              </div>
+              <p class="font-label-uppercase text-label-uppercase text-outline">
+                Fine Linen Blend
+              </p>
+              <p class="font-body-md text-body-md pt-2">7.100.000 VND</p>
+            </div>
+          </div>
+          <!-- Product 5 -->
+          <div class="product-card group cursor-pointer">
+            <div class="overflow-hidden aspect-[3/4] mb-6 bg-surface-container">
+              <img
+                alt="Túi Da Essential"
+                class="w-full h-full object-cover editorial-image-hover"
+                data-alt="An artistic flat lay of designer leather accessories including a sleek black handbag and matching pumps. The background is a cool-toned marble surface. The lighting is clean and sharp, highlighting the premium leather texture and minimalist design lines. The composition is balanced and elegant, typical of high-end fashion boutiques."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrgdAgg-aI5ATYmwYx-lw84tTKBXFfGXycIPLXwtbRW6iKqnPHqoOBHlLCZUaXIRB7G873iQ3Au0YLsWIdLQ1M7Ibp1pozuNTI8tzLEnMy4AyXqxy66AhpCRKuUgrM3zgtUKrJYavvxyaYh57L5O3beHlLhJIEx-JhFqcVaOb_HuAqOMc37r0zgK0ktJiy3C0PsQubPAxXZKRbdmXYMjHJBl-zBvNz0tmeZNdznuzJDvP3zj-1J7f5vduh3jttjkxK0klyBVKR4A0U"
+              />
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between items-start">
+                <h3
+                  class="font-body-md text-body-md font-bold uppercase tracking-wider"
+                >
+                  Túi Da Essential
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="favorite"
+                  >favorite</span
+                >
+              </div>
+              <p class="font-label-uppercase text-label-uppercase text-outline">
+                Italian Calfskin
+              </p>
+              <p class="font-body-md text-body-md pt-2">15.500.000 VND</p>
+            </div>
+          </div>
+          <!-- Product 6 -->
+          <div class="product-card group cursor-pointer lg:mt-24">
+            <div class="overflow-hidden aspect-[3/4] mb-6 bg-surface-container">
+              <img
+                alt="Blazer Cấu Trúc Noir"
+                class="w-full h-full object-cover editorial-image-hover"
+                data-alt="Editorial image of a structured beige blazer styled over a minimalist turtleneck. The lighting is soft and diffused, creating a serene, high-end atmosphere. The model's pose is architectural and poised, perfectly capturing the brand's commitment to timeless sophistication and refined modern tailoring."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDubsYyavhjnxJpmb_JaIi9Q_77F9cvX_8Z0mdDlOa2yEmAzIsxNHhm-MOFTPt2oPiawXX9zurALBfU9tPzUlpQmWfO-pcA6J-QeS3QXi8lfsuKfSqB3CiQPiaIkg1CrTieK7b1h3vXC62eegskEG36E0RbthbG2gXGXuXK48Aqa6RLgc2C381EUimtpuKPlYqqeYqvS-uffD_kgw_FPSTJGZYWxyZm8K7OjqyVFGh0UJ6317l0JCeowUlUY-RrPfijyRW_-mLmVZ3U"
+              />
+            </div>
+            <div class="space-y-1">
+              <div class="flex justify-between items-start">
+                <h3
+                  class="font-body-md text-body-md font-bold uppercase tracking-wider"
+                >
+                  Blazer Noir
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="favorite"
+                  >favorite</span
+                >
+              </div>
+              <p class="font-label-uppercase text-label-uppercase text-outline">
+                Virgin Wool
+              </p>
+              <p class="font-body-md text-body-md pt-2">9.800.000 VND</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-24 text-center">
+          <button
+            class="bg-primary text-on-primary px-12 py-4 font-label-uppercase text-label-uppercase tracking-widest hover:bg-surface hover:text-primary hover:border-primary border border-transparent transition-all duration-500"
+          >
+            XEM THÊM SẢN PHẨM
+          </button>
+        </div>
+      </section>
+      <!-- Editorial Section -->
+      <section class="bg-surface-container-low py-section-gap">
+        <div
+          class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-20 items-center"
+        >
+          <div class="relative aspect-[4/5] overflow-hidden">
+            <img
+              alt="Editorial Story"
+              class="w-full h-full object-cover grayscale"
+              data-alt="An evocative black and white editorial photograph showing a model in motion, with sheer fabric billowing in the wind. The background is a minimal, bright white studio space. The image captures the essence of fluid elegance and poetic movement, reinforcing the luxury brand's artistic and high-end narrative style."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv0X5Bjfl9sAU65rqVkw-4rLeKPImYx0LaRZcHyYKhDoopGuoQ0AhAJJUI2rQ_Rf0rLv-yURp6Bz5nZgWxyCkCZAzFnGdQFjFcj5eZ-50dU0NNRHkRZljqEufa3Ow2sKV1LeISoAwDCSgo5I-4GDCT6Hw2oHDUoPGGAyFcorko-GPeJGzqXCFm4W5gRFxdgoq7O2Yw22zy99OsYvZysqbn6AEKQ4nTER8SnmmEdEg67Gjm19lnlkLMn0gJPRexVr_muIteVDPXg8tz"
+            />
+          </div>
+          <div class="space-y-10">
+            <h2
+              class="font-display-lg text-headline-md md:text-display-lg leading-tight"
+            >
+              Vẻ đẹp là một hành trình tĩnh lặng.
+            </h2>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-lg leading-relaxed"
+            >
+              "Chúng tôi không tạo ra quần áo. Chúng tôi kiến tạo những khoảnh
+              khắc của sự tự tin và tinh tế. Mỗi thiết kế là một lời cam kết về
+              chất lượng và sự tôn trọng đối với nghệ thuật thủ công truyền
+              thống."
+            </p>
+            <div class="pt-6">
+              <a
+                class="font-label-uppercase text-label-uppercase border-b border-primary pb-2 tracking-widest hover:opacity-50 transition-opacity"
+                href="#"
+                >KHÁM PHÁ MAISON</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Join the Maison -->
+      <section
+        class="py-section-gap px-margin-mobile md:px-margin-desktop text-center bg-surface"
+      >
+        <div class="max-w-2xl mx-auto space-y-8">
+          <h2
+            class="font-headline-md text-headline-md uppercase tracking-widest"
+          >
+            Join the Maison
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Đăng ký nhận bản tin để cập nhật những bộ sưu tập mới nhất và những
+            câu chuyện từ thế giới ÉLÉGANCE.
+          </p>
+          <form class="flex flex-col md:flex-row gap-4 pt-4">
+            <input
+              class="flex-grow bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary font-body-md py-3 text-center md:text-left"
+              placeholder="Địa chỉ Email của bạn"
+              type="email"
+            />
+            <button
+              class="bg-primary text-on-primary px-10 py-3 font-label-uppercase text-label-uppercase tracking-widest hover:bg-surface-variant hover:text-primary transition-colors duration-300"
+              type="submit"
+            >
+              ĐĂNG KÝ
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-surface-container-lowest dark:bg-on-surface border-t border-outline-variant/30"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max-width mx-auto"
+      >
+        <div class="space-y-6">
+          <a
+            class="font-display-lg text-headline-sm tracking-widest text-primary dark:text-on-primary uppercase"
+            href="/"
+            >ÉLÉGANCE</a
+          >
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Nghệ thuật của sự tối giản và sang trọng vượt thời gian.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-label-uppercase text-label-uppercase mb-8">
+            Dịch vụ
+          </h4>
+          <ul class="space-y-4">
+            <li class="">
+              <a
+                class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity duration-300"
+                href="#"
+                >Chăm sóc khách hàng</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity duration-300"
+                href="#"
+                >Vận chuyển &amp; Trả hàng</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity duration-300"
+                href="#"
+                >Hướng dẫn chọn size</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-uppercase text-label-uppercase mb-8">
+            Thông tin
+          </h4>
+          <ul class="space-y-4">
+            <li class="">
+              <a
+                class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity duration-300"
+                href="#"
+                >Maison</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity duration-300"
+                href="#"
+                >Phát triển bền vững</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity duration-300"
+                href="#"
+                >Liên hệ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-uppercase text-label-uppercase mb-8">
+            Theo dõi chúng tôi
+          </h4>
+          <div class="flex gap-6">
+            <a
+              class="text-on-surface-variant hover:text-primary transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined">public</span></a
+            >
+            <a
+              class="text-on-surface-variant hover:text-primary transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined">photo_camera</span></a
+            >
+            <a
+              class="text-on-surface-variant hover:text-primary transition-colors"
+              href="#"
+              ><span class="material-symbols-outlined">movie</span></a
+            >
+          </div>
+          <div class="mt-8 space-y-2">
+            <p
+              class="font-label-uppercase text-label-uppercase text-[10px] text-outline"
+            >
+              © 2024 ÉLÉGANCE. ALL RIGHTS RESERVED.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="font-label-uppercase text-[10px] text-outline hover:text-primary"
+                href="#"
+                >Điều khoản</a
+              >
+              <a
+                class="font-label-uppercase text-[10px] text-outline hover:text-primary"
+                href="#"
+                >Bảo mật</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
